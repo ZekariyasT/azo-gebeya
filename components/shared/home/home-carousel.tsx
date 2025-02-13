@@ -7,6 +7,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -62,6 +64,8 @@ export function HomeCarousel({
           </CarouselItem>
         ))}
       </CarouselContent>
+      <CarouselPrevious className="left-0 md:left-12" />
+      <CarouselNext className="right-0 md:right-12" />
     </Carousel>
   );
 }
